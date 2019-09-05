@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Testing Deeplink Application</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h3><span style="background-color: #914c53; color: #ffffff; padding: 0 3px;">DeepLink Testing</span></h3>
+    <h2 style="color: #2e6c80;">Stagging Environment:</h2>
+    <ol style="list-style: none; font-size: 14px; line-height: 32px; font-weight: bold;">
+        <li style="clear: both;">
+            <a href="evolableasia.airtripstg://top"> <img style="float: left;" src="https://html-online.com/img/01-interactive-connection.png" alt="interactive connection" width="45" /> 1. TOP</a>
+        </li>
+
+        <li style="clear: both;">
+            <a href="evolableasia.airtripstg://signup"> <img style="float: left;" src="https://html-online.com/img/05-gibberish.png" alt="html table div" width="45" /> 2. SignUp </a>
+        </li>
+
+        <li style="clear: both;">
+            <a href="evolableasia.airtripstg://webview?url_web=https://sp.skygate.co.jp/"> <img style="float: left;" src="https://html-online.com/img/04-replace.png" alt="html table div" width="45" /> 3. WebView </a>
+        </li>
+
+        <li style="clear: both;"><img style="float: left;" src="https://html-online.com/img/03-docs-to-html.png" alt="html cleaner" width="45" /> 4. Domestic-Search
+            <ul style="list-style-type: circle;">
+                <li style="clear: both;"> <a href="evolableasia.airtripstg://domestic/flight/search"> No Parameters </a></li>
+
+                <li style="clear: both;"> <a href="evolableasia.airtripstg://domestic/flight/search?departure=HND&destination=FUK"> Have Parameters </a></li>
+            </ul>
+        </li>
+
+        <li style="clear: both;"><img style="float: left;" src="https://html-online.com/img/02-html-clean.png" alt="html cleaner" width="45" /> 5. Domestic-SearchResult
+            <ul style="list-style-type: circle;">
+                <li style="clear: both;"> <a href="evolableasia.airtripstg://domestic/flight/search_result?round_trip=0&adult=1&upgrade=0&dep1=HND&des1=FUK&ymd1=20190920"> OneWay </a></li>
+
+                <li style="clear: both;"> <a href="evolableasia.airtripstg://domestic/flight/search_result?round_trip=1&adult=2&upgrade=1&dep1=TKY&des1=OSK&ymd1=20190920&dep2=OSK&des2=TKY&ymd2=20190925"> RoundTrip </a></li>
+            </ul>
+        </li>
+
+        
+        <li style="clear: both;"><img style="float: left;" src="https://html-online.com/img/6-table-div-html.png" alt="replace text" width="45" />6. Domestic-BookingInput
+            <ul style="list-style-type: circle;">
+                <li style="clear: both;"> <a href="evolableasia.airtripstg://domestic/flight/booking_input?round_trip=0&flight_date1=2019-09-20&dep1=HND&des1=FUK&flight_no1=ANA3845&dep_time1=10:20&des_time1=12:15&service1=ANA&add_price1=1080&seat1=99&expense_charge1=2029&seat_type1=n&price1=42599&stock_price1=0&ticket_type1=ana_flex_d&price_kind1=1&carrier_price1=39490&changeable_ticket1=1&point1=811&ticket_discount1=1000&child_price1=22859&child_expense_charge1=1089&child_carrier_price1=20690&child_add_price1=1080&surcharge1=0&quick_pay1=0&code_share1=SFJ"> OneWay </a></li>
+
+                <li style="clear: both;"> <a href="evolableasia.airtripstg://domestic/flight/booking_input?round_trip=1&flight_date1=2019-09-20&dep1=HND&des1=FUK&flight_no1=ANA3845&dep_time1=10:20&des_time1=12:15&service1=ANA&add_price1=1080&seat1=99&expense_charge1=2029&seat_type1=n&price1=42599&stock_price1=0&ticket_type1=ana_flex_d&price_kind1=1&carrier_price1=39490&changeable_ticket1=1&point1=811&ticket_discount1=1000&child_price1=22859&child_expense_charge1=1089&child_carrier_price1=20690&child_add_price1=1080&surcharge1=0&quick_pay1=0&code_share1=SFJ&flight_date2=2019-09-25&dep2=FUK&des2=HND&flight_no2=JAL332&dep_time2=21:00&des_time2=22:40&service2=JAL&add_price2=1080&seat2=99&expense_charge2=659&seat_type2=n&price2=13829&stock_price2=0&ticket_type2=sprtoku&price_kind2=1&carrier_price2=12090&changeable_ticket2=0&point2=263&ticket_discount2=1000&child_price2=13671&child_expense_charge2=651&child_carrier_price2=11940&child_add_price2=1080&surcharge2=0&quick_pay2=0&code_share2="> RoundTrip </a></li>
+            </ul>
+        </li>
+
+
+        <li style="clear: both;"><img style="float: left;" src="https://html-online.com/img/05-gibberish.png" alt="html cleaner" width="45" /> 7. Overseas-Search
+            <ul style="list-style-type: circle;">
+                <li style="clear: both;"> <a href="evolableasia.airtripstg://overseas/flight/search"> No Parameters </a></li>
+
+                <li style="clear: both;"> <a href="evolableasia.airtripstg://overseas/flight/search?departure_code=&departure_name=タンソンニャット空港&departure_type=A&departure_country_code=VN&departure_country_name=ベトナム&arrival_code=BKK&arrival_name=バンコク&arrival_type=C&arrival_country_code=TH&arrival_country_name=タイ"> Have Parameters </a></li>
+            </ul>
+        </li>
+
+        <li style="clear: both;"><img style="float: left;" src="https://html-online.com/img/04-replace.png" alt="html cleaner" width="45" /> 8. Overseas-SearchResult
+            <ul style="list-style-type: circle;">
+                <li style="clear: both;"> <a href="evolableasia.airtripstg://overseas/flight/search_result?round_trip=1&adult_count=1&cabin_class=Y&departure_code=TYO&departure_name=東京&departure_type=C&departure_country_code=JP&departure_country_name=日本&departure_date=20190920&arrival_code=SEL&arrival_name=ソウル&arrival_type=C&arrival_country_code=KR&arrival_country_name=韓国&arrival_date=20190925&direct_flight=0&airlines=BR-ET-NH-OZ"> Full "airline-code" for an Alliance </a></li>
+
+                <li style="clear: both;"> <a href="evolableasia.airtripstg://overseas/flight/search_result?round_trip=1&adult_count=1&cabin_class=Y&departure_code=TYO&departure_name=東京&departure_type=C&departure_country_code=JP&departure_country_name=日本&departure_date=20190920&arrival_code=SEL&arrival_name=ソウル&arrival_type=C&arrival_country_code=KR&arrival_country_name=韓国&arrival_date=20190925&direct_flight=0&airlines="> Empty "airlines" </a></li>
+
+                <li style="clear: both;"> <a href="evolableasia.airtripstg://overseas/flight/search_result?round_trip=1&adult_count=1&cabin_class=Y&departure_code=TYO&departure_name=東京&departure_type=C&departure_country_code=JP&departure_country_name=日本&departure_date=20190920&arrival_code=SEL&arrival_name=ソウル&arrival_type=C&arrival_country_code=KR&arrival_country_name=韓国&arrival_date=20190925&direct_flight=0&airlines=ABCXYZ"> Not found "airline-code" </a></li>
+
+                <li style="clear: both;"> <a href="evolableasia.airtripstg://overseas/flight/search_result?round_trip=1&adult_count=1&cabin_class=Y&departure_code=TYO&departure_name=東京&departure_type=C&departure_country_code=JP&departure_country_name=日本&departure_date=20190920&arrival_code=SEL&arrival_name=ソウル&arrival_type=C&arrival_country_code=KR&arrival_country_name=韓国&arrival_date=20190925&direct_flight=0&airlines=NH"> Only an "airline-code" for an Alliance </a></li>
+
+                <li style="clear: both;"> <a href="evolableasia.airtripstg://overseas/flight/search_result?round_trip=1&adult_count=1&cabin_class=Y&departure_code=TYO&departure_name=東京&departure_type=C&departure_country_code=JP&departure_country_name=日本&departure_date=20190920&arrival_code=SEL&arrival_name=ソウル&arrival_type=C&arrival_country_code=KR&arrival_country_name=韓国&arrival_date=20190925&direct_flight=0&airlines=ET-S7-SU-BX"> Each Alliance has an "airline-code" </a></li>
+            </ul>
+        </li>
+
+    </ol>
+    <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+    <h2 style="color: #2e6c80;">Production Environment:</h2>
+    <ol style="list-style: none; font-size: 14px; line-height: 32px; font-weight: bold;">
+        <li style="clear: both;">
+            <a href="evolableasia.airtrip://top"> <img style="float: left;" src="https://html-online.com/img/01-interactive-connection.png" alt="interactive connection" width="45" /> 1. TOP</a>
+        </li>
+
+        <li style="clear: both;">
+            <a href="evolableasia.airtrip://signup"> <img style="float: left;" src="https://html-online.com/img/05-gibberish.png" alt="html table div" width="45" /> 2. SignUp </a>
+        </li>
+
+        <li style="clear: both;">
+            <a href="evolableasia.airtrip://webview?url_web=https://sp.skygate.co.jp/"> <img style="float: left;" src="https://html-online.com/img/04-replace.png" alt="html table div" width="45" /> 3. WebView </a>
+        </li>
+
+        <li style="clear: both;"><img style="float: left;" src="https://html-online.com/img/03-docs-to-html.png" alt="html cleaner" width="45" /> 4. Domestic-Search
+            <ul style="list-style-type: circle;">
+                <li style="clear: both;"> <a href="evolableasia.airtrip://domestic/flight/search"> No Parameters </a></li>
+
+                <li style="clear: both;"> <a href="evolableasia.airtrip://domestic/flight/search?departure=HND&destination=FUK"> Have Parameters </a></li>
+            </ul>
+        </li>
+
+        <li style="clear: both;"><img style="float: left;" src="https://html-online.com/img/02-html-clean.png" alt="html cleaner" width="45" /> 5. Domestic-SearchResult
+            <ul style="list-style-type: circle;">
+                <li style="clear: both;"> <a href="evolableasia.airtrip://domestic/flight/search_result?round_trip=0&adult=1&upgrade=0&dep1=HND&des1=FUK&ymd1=20190920"> OneWay </a></li>
+
+                <li style="clear: both;"> <a href="evolableasia.airtrip://domestic/flight/search_result?round_trip=1&adult=2&upgrade=1&dep1=TKY&des1=OSK&ymd1=20190920&dep2=OSK&des2=TKY&ymd2=20190925"> RoundTrip </a></li>
+            </ul>
+        </li>
+
+        
+        <li style="clear: both;"><img style="float: left;" src="https://html-online.com/img/6-table-div-html.png" alt="replace text" width="45" />6. Domestic-BookingInput
+            <ul style="list-style-type: circle;">
+                <li style="clear: both;"> <a href="evolableasia.airtrip://domestic/flight/booking_input?round_trip=0&flight_date1=2019-09-20&dep1=HND&des1=FUK&flight_no1=ANA3845&dep_time1=10:20&des_time1=12:15&service1=ANA&add_price1=1080&seat1=99&expense_charge1=2029&seat_type1=n&price1=42599&stock_price1=0&ticket_type1=ana_flex_d&price_kind1=1&carrier_price1=39490&changeable_ticket1=1&point1=811&ticket_discount1=1000&child_price1=22859&child_expense_charge1=1089&child_carrier_price1=20690&child_add_price1=1080&surcharge1=0&quick_pay1=0&code_share1=SFJ"> OneWay </a></li>
+
+                <li style="clear: both;"> <a href="evolableasia.airtrip://domestic/flight/booking_input?round_trip=1&flight_date1=2019-09-20&dep1=HND&des1=FUK&flight_no1=ANA3845&dep_time1=10:20&des_time1=12:15&service1=ANA&add_price1=1080&seat1=99&expense_charge1=2029&seat_type1=n&price1=42599&stock_price1=0&ticket_type1=ana_flex_d&price_kind1=1&carrier_price1=39490&changeable_ticket1=1&point1=811&ticket_discount1=1000&child_price1=22859&child_expense_charge1=1089&child_carrier_price1=20690&child_add_price1=1080&surcharge1=0&quick_pay1=0&code_share1=SFJ&flight_date2=2019-09-25&dep2=FUK&des2=HND&flight_no2=JAL332&dep_time2=21:00&des_time2=22:40&service2=JAL&add_price2=1080&seat2=99&expense_charge2=659&seat_type2=n&price2=13829&stock_price2=0&ticket_type2=sprtoku&price_kind2=1&carrier_price2=12090&changeable_ticket2=0&point2=263&ticket_discount2=1000&child_price2=13671&child_expense_charge2=651&child_carrier_price2=11940&child_add_price2=1080&surcharge2=0&quick_pay2=0&code_share2="> RoundTrip </a></li>
+            </ul>
+        </li>
+
+
+        <li style="clear: both;"><img style="float: left;" src="https://html-online.com/img/05-gibberish.png" alt="html cleaner" width="45" /> 7. Overseas-Search
+            <ul style="list-style-type: circle;">
+                <li style="clear: both;"> <a href="evolableasia.airtrip://overseas/flight/search"> No Parameters </a></li>
+
+                <li style="clear: both;"> <a href="evolableasia.airtrip://overseas/flight/search?departure_code=&departure_name=タンソンニャット空港&departure_type=A&departure_country_code=VN&departure_country_name=ベトナム&arrival_code=BKK&arrival_name=バンコク&arrival_type=C&arrival_country_code=TH&arrival_country_name=タイ"> Have Parameters </a></li>
+            </ul>
+        </li>
+
+        <li style="clear: both;"><img style="float: left;" src="https://html-online.com/img/04-replace.png" alt="html cleaner" width="45" /> 8. Overseas-SearchResult
+            <ul style="list-style-type: circle;">
+                <li style="clear: both;"> <a href="evolableasia.airtrip://overseas/flight/search_result?round_trip=1&adult_count=1&cabin_class=Y&departure_code=TYO&departure_name=東京&departure_type=C&departure_country_code=JP&departure_country_name=日本&departure_date=20190920&arrival_code=SEL&arrival_name=ソウル&arrival_type=C&arrival_country_code=KR&arrival_country_name=韓国&arrival_date=20190925&direct_flight=0&airlines=BR-ET-NH-OZ"> Full "airline-code" for an Alliance </a></li>
+
+                <li style="clear: both;"> <a href="evolableasia.airtrip://overseas/flight/search_result?round_trip=1&adult_count=1&cabin_class=Y&departure_code=TYO&departure_name=東京&departure_type=C&departure_country_code=JP&departure_country_name=日本&departure_date=20190920&arrival_code=SEL&arrival_name=ソウル&arrival_type=C&arrival_country_code=KR&arrival_country_name=韓国&arrival_date=20190925&direct_flight=0&airlines="> Empty "airlines" </a></li>
+
+                <li style="clear: both;"> <a href="evolableasia.airtrip://overseas/flight/search_result?round_trip=1&adult_count=1&cabin_class=Y&departure_code=TYO&departure_name=東京&departure_type=C&departure_country_code=JP&departure_country_name=日本&departure_date=20190920&arrival_code=SEL&arrival_name=ソウル&arrival_type=C&arrival_country_code=KR&arrival_country_name=韓国&arrival_date=20190925&direct_flight=0&airlines=ABCXYZ"> Not found "airline-code" </a></li>
+
+                <li style="clear: both;"> <a href="evolableasia.airtrip://overseas/flight/search_result?round_trip=1&adult_count=1&cabin_class=Y&departure_code=TYO&departure_name=東京&departure_type=C&departure_country_code=JP&departure_country_name=日本&departure_date=20190920&arrival_code=SEL&arrival_name=ソウル&arrival_type=C&arrival_country_code=KR&arrival_country_name=韓国&arrival_date=20190925&direct_flight=0&airlines=NH"> Only an "airline-code" for an Alliance </a></li>
+
+                <li style="clear: both;"> <a href="evolableasia.airtrip://overseas/flight/search_result?round_trip=1&adult_count=1&cabin_class=Y&departure_code=TYO&departure_name=東京&departure_type=C&departure_country_code=JP&departure_country_name=日本&departure_date=20190920&arrival_code=SEL&arrival_name=ソウル&arrival_type=C&arrival_country_code=KR&arrival_country_name=韓国&arrival_date=20190925&direct_flight=0&airlines=ET-S7-SU-BX"> Each Alliance has an "airline-code" </a></li>
+            </ul>
+        </li>
+    </ol>
+</body>
+
+</html>
